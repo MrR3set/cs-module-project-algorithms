@@ -4,7 +4,9 @@ Returns: an integer
 '''
 def single_number(arr):
     # Your code here
-
+    for i in range(0,len(arr)):
+        if arr.count(arr[i]) <= 1:
+            return arr[i]
     pass
 
 
